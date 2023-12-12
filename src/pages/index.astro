@@ -1,7 +1,20 @@
 ---
+import { Image } from 'astro:assets';
 import Layout from '../layouts/Layout.astro';
 ---
 
 <Layout title="Welcome to Angular Nexus">
-
+    <main class="flex flex-col items-center justify-center h-screen">
+    <Image src="/images/question.png" alt="Angular Nexus" height="200" width="200" />
+    <h1 class="text-6xl font-bold text-center">ANGULAR NEXUS</h1>
+    <p class="text-2xl mt-4">Paris, France</p>
+    <p class="text-2xl">September 2024
+    </main>
 </Layout>
+<style>
+    h1 {
+        background-image: linear-gradient(to right top, #f60845, #ff005f, #ff007c, #ff0099, #ff00b8, #f609c7, #ea19d6, #db28e6, #cb21e9, #ba1ded, #a71bf0, #911cf4);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+</style>
